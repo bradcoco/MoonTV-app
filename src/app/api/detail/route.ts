@@ -4,7 +4,7 @@ import { getAvailableApiSites, getCacheTime } from '@/lib/config';
 import { getDetailFromApi, searchFromApi } from '@/lib/downstream';
 import { SearchResult } from '@/lib/types';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
